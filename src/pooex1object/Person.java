@@ -53,14 +53,16 @@ public class Person {
 		this.city = city;
 	}
 	
-	
-	
-	
+
 	// To String 
-	public String toString() {
-		return " Person [Nom : " + this.nom+ "] [Prénom : " + 
-				this.prenom + "] [age : "+ this.age + 
-				"] [Adresse : " + this.adresse 
-				+ "] [Ville de naissance : "+ city+ "]" ;
-	}
+		public String toString() {
+			//We only return the ones with Paris in address or when born in france
+
+				return " Person [Nom : " + this.nom+ "] [Prénom : " + 
+						this.prenom + "] [age : "+ this.age + 
+						"] [Adresse : " + this.adresse 
+						+ "] [Ville de naissance : "+ city+ "]" ;
+					
+
+		}
 }

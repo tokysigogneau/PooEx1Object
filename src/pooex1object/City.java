@@ -19,7 +19,6 @@ public class City {
 		this.ville = ville;
 		this.pays = pays;
 		this.nbHabitants = nbHabitants;
-		int nombreObjets = 0;
 		
 	}
 	
@@ -67,9 +66,17 @@ public class City {
 	}*/
 	
 	public String toString() {
-		return "Ville de " + this.ville+ 
-				" en "+ this.pays+ " ayant "+ 
-				this.nbHabitants+" habitants";
+		if (this.nbHabitants > 0) {
+			return "Ville de " + this.ville+ 
+					" en "+ this.pays+ " ayant "+ 
+					this.nbHabitants+" habitants";
+			
+		} else {
+			return "Ville de " + this.ville+ 
+					" en "+ this.pays;
+		}
+		
+
 		
 		
 	}

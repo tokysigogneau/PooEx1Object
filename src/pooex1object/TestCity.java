@@ -5,19 +5,21 @@ public class TestCity {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		City Toulouse = new City ("Toulouse", "France", 450000);
-		City Paris = new City ("Paris", "France", 1200000);
-		City Tokyo = new City ("Madrid", "Espagne", 3000000 );
+		City toulouse = new City ("Toulouse", "France", 450000);
+		City paris = new City ("Paris", "France", 1200000);
+		City madrid = new City ("Madrid", "Espagne",0);
 		
-		System.out.println(Toulouse);
-		Toulouse.nbHabitants += 20000;
+		System.out.println(toulouse);
+		toulouse.nbHabitants += 20000;
+		System.out.println();
 		
+		/*toulouse.display();
+		paris.display();
+		madrid.display();*/
 		
-		/*Toulouse.display();
-		Paris.display();
-		Tokyo.display();*/
-		
-		System.out.println(Toulouse);
+		System.out.println(toulouse);
+		System.out.println(paris);
+		System.out.println(madrid);
 		System.out.println("Nombre d'objets : "+ City.nbObjects);
 		
 	}
